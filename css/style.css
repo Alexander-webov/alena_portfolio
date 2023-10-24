@@ -111,7 +111,7 @@ body {
 
 }
 
-.menu__link-btn {
+.header__menu-link ul li a.menu__link-btn {
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -128,18 +128,15 @@ body {
 
 .header__menu-link ul li a.menu__link-btn:hover {
   color: #fff;
-  transition: all 10ms;
+  transition: all .5s;
+  background: linear-gradient(155deg, #40F0B2 0%, #2EC4E5 99.74%);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
 }
 
 .header__menu-link ul li a.menu__link-btn:active {
   color: #fff;
 }
 
-.menu__link-btn:hover {
-  background: linear-gradient(155.14deg, #40F0B2 0%, #2EC4E5 99.74%);
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
-  transition: all 900ms;
-}
 
 .menu__link-btn:active {
   background-color: #31C5E5;
@@ -152,12 +149,39 @@ body {
   display: flex;
   align-items: center;
   color: #333333;
+  font-weight: 500;
 }
 
 .logo-wrapper a img {
   padding-right: 20px;
 }
 
+.logo-image {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.logo-image .flare {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 45px;
+  transform: skewX(-45deg);
+  animation: flareAnimation;
+  left: -150%;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+  animation: flareAnimation 3s infinite linear; // Время и тип анимации можно менять
+}
+
+@keyframes flareAnimation {
+  0% {
+    left: -150%;
+  }
+
+  100% {
+    left: 150%;
+  }
+}
 
 
 
@@ -494,7 +518,52 @@ project
 
 }
 
+.project__items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 24px;
+  margin-top: 40px;
+}
 
+.project__item {
+  max-width: 320px;
+  height: 100%;
+  max-height: 310px;
+  padding: 20px;
+  border-radius: 16px;
+  background: #FFF;
+  box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 0.10);
+  transition: all 0.3s;
+}
+
+.project__item:hover {
+  box-shadow: 4px 4px 40px 0px rgba(0, 0, 0, 0.40);
+}
+
+.project__item-text {
+  margin: 8px 0;
+  color: #333;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+
+}
+
+.project__item-link {
+  font-weight: 500;
+  color: #46D3C5;
+}
+
+.project__item-link span {
+  margin-left: 8px;
+}
+
+.project__item-img {
+  border-radius: 16px;
+  width: 267px;
+  height: 200px;
+  object-fit: cover;
+}
 
 /*===========
 
@@ -737,7 +806,7 @@ contact
 
 
 .contact {
-  background-image: url('/images/contact-bg.png');
+  background-image: url('../images/contact-bg.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -783,11 +852,11 @@ contact
   height: 180px;
   margin-top: 20px;
   border: none;
-  padding: 14.5px 20px;
+  padding: 20px;
   background: #FFFFFF;
   border-radius: 37px;
   resize: none;
-  /* Запрещаем изменять размер */
+
 }
 
 
@@ -842,7 +911,16 @@ footer
 
 
 
+/* 
+Идеи для анимации
+1 - лого идет блеск +
+2 - шары лопуются или улетают 
+3 - полчкркивание для меня
+4 - leran more стрелка улетает вверх
+5 - при отправки собшения коверт закрывается
+ 6 -  при  hover на Programs & Skills icons эффект волны
 
+*/
 
 
 

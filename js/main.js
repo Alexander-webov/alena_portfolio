@@ -29,3 +29,13 @@ const swiper2 = new Swiper('.project__content', {
 });
 
 
+let a = 6;
+let b = 6;
+let Stroka = "sasha";
+if (a > b) {
+    console.log(Stroka)
+} else {
+    console.log('Саша молодец, что учит ПРОГРАММИРОВАНИЕ!')
+}
+
+
