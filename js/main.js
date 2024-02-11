@@ -24,18 +24,64 @@ const swiper2 = new Swiper('.project__content', {
     autoplay: {
         delay: 6000,
     },
-
-
 });
 
 
-let a = 6;
-let b = 6;
-let Stroka = "sasha";
-if (a > b) {
-    console.log(Stroka)
-} else {
-    console.log('Саша молодец, что учит ПРОГРАММИРОВАНИЕ!')
-}
+
+const swiperMyLastProject = new Swiper('.project__wrapper', {
+    slideClass: 'project__item-box',
+    wrapperClass: 'project__items',
+    autoplay: {
+        delay: 4000,
+    },
+    slidesPerView: 4,
+    spaceBetween: 20,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+});
+
+/* Modal gallery */
+const imgProgect = document.querySelector('.project__item');
+const imageModalElement = document.querySelector('.modal-content');
+const modalImageBlock = document.querySelector('.modal-image');
+const btnCloseModal = document.querySelector('.close');
+const wrapper = document.querySelector('.wrapper');
 
 
+const imgProgectAll = document.querySelectorAll('.project__item');
+
+imgProgectAll.forEach((element) => element.addEventListener('click', () => {
+    const imgForModal = element.getAttribute('data_src');
+    imageModalElement.src = imgForModal;
+    modalImageBlock.classList.add('show');
+    wrapper.classList.add('not-scroll');
+}));
+
+
+
+btnCloseModal.addEventListener('click', () => {
+    modalImageBlock.classList.remove('show');
+    wrapper.classList.remove('not-scroll');
+    console.log("close");
+})
+
+
+/* Modal contact */
+const modalContact = document.querySelector('.modal-contact');
+const btnOpenModalContact = document.querySelector('.menu__link-btn');
+const btnCloseModalContact = document.querySelector('.modal-contact__close');
+
+btnOpenModalContact.addEventListener('click', () => {
+    modalContact.classList.add('show-modal');
+    /* wrapper.classList.remove('not-scroll'); */
+    console.log(1);
+
+})
+
+btnCloseModalContact.addEventListener('click', () => {
+    modalContact.classList.remove('show-modal');
+    /* wrapper.classList.remove('not-scroll'); */
+
+})

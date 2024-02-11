@@ -10,55 +10,494 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/fonts.css">
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
 
-	<header class="header">
-		<div class="container">
-			<div class="header__menu">
-				<div class="logo-wrapper">
-					<a href="/" class="logo">
-						<div class="logo-image">
-							<img src="./images/logo.svg" alt="logo">
-							<span class="flare"></span>
-						</div>
-						<div>UI/UX designer</div>
-					</a>
+	<div class="wrapper ">
+
+
+
+		<header class="header">
+			<div class="container">
+				<div class="header__menu">
+					<div class="logo-wrapper">
+						<a href="/" class="logo">
+							<div class="logo-image">
+								<img src="./images/logo.svg" alt="logo">
+								<span class="flare"></span>
+							</div>
+							<div>UI/UX designer</div>
+						</a>
+					</div>
+
+					<nav class="header__menu-links">
+						<ul>
+							<a href="#" class="menu__link-btn">Contact Me</a>
+
+						</ul>
+					</nav>
+
+
 				</div>
-				<nav class="header__menu-link">
-					<ul>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Services</a></li>
-						<li><a href="#">Portflio</a></li>
-						<li><a href="#">Experience</a></li>
-						<li><a class="menu__link-btn" href="#">Contact Me</a></li>
-					</ul>
-				</nav>
+				<div class="header__content">
+					<div class="header__info">
+						<h1 class="header__info-title">
+							<span>Hello! I’m</span>
+							Alena Zhukova
+						</h1>
+						<div class="header__info-descr">
+							Highly skilled and creative UI/UX Designer with <span>5+ years of experience</span>
+							in product design, information architecture, and web design systems.
+							Completed <span>over 400 projects</span> and get <span>over 300 positive reviews.</span>
+						</div>
+						<div class="header__info-btns">
+							<a class="header__info-btn-tel" href="#">Let’s Talk
+								<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+							</a>
+							<a class="header__info-btn-portf" href="#">Portfolio
+								<svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M9.92235 3.0364C9.83216 3.19673 9.77204 3.38714 9.65178 3.51741C6.9561 6.22311 4.2504 8.92881 1.5447 11.6345C1.26411 11.9151 0.923394 12.1155 0.562634 11.9251C0.312106 11.7948 0.0214939 11.4842 0.00145169 11.2437C-0.0185905 10.9431 0.171811 10.5623 0.392275 10.3418C1.76517 8.91879 3.16812 7.53588 4.56106 6.14294C5.88384 4.82015 7.20663 3.49737 8.52942 2.17458C8.61961 2.08439 8.69978 1.98418 8.85009 1.8038C8.58955 1.79378 8.41919 1.77374 8.24883 1.77374C6.29471 1.77374 4.34059 1.77374 2.38648 1.77374C2.17603 1.77374 1.95557 1.75369 1.74513 1.69357C1.33426 1.57331 1.15388 1.26266 1.17392 0.851795C1.19396 0.470992 1.37434 0.170359 1.77519 0.09019C2.04576 0.0400844 2.30631 0 2.57688 0C5.19239 0 7.81792 0 10.4434 0C10.6739 0 10.9144 0.0100211 11.1449 0.0501056C11.656 0.140296 11.8965 0.420887 11.9065 0.941984C11.9166 3.91825 11.9166 6.8845 11.9065 9.86077C11.9065 10.3819 11.5658 10.7426 11.0948 10.7727C10.6639 10.7927 10.2931 10.4821 10.2029 9.99105C10.1729 9.83071 10.1729 9.66035 10.1729 9.48999C10.1729 7.56594 10.1729 5.65191 10.1729 3.72785C10.1729 3.54747 10.1729 3.36709 10.1729 3.18671C10.0727 3.13661 10.0025 3.0865 9.92235 3.0364Z"
+										fill="#333333" />
+								</svg>
+
+							</a>
+						</div>
+						<ul class="header__info-soc">
+							<li>
+								<a class="header__icon-fb" href="#">
+									<i class="fa fa-facebook" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li>
+								<a class="header__icon-in" href="#">
+									<i class="fa fa-instagram" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li>
+								<a class="header__icon-wh" href="#">
+									<i class="fa fa-whatsapp" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li>
+								<a class="header__icon-ma" href="#">@</a>
+							</li>
+						</ul>
+					</div>
+					<div class="header__photo">
+						<ul class="header__photo-items">
+
+							<li class="header__photo-item header__photo-be">
+								<a class="header__photo-link" href="#"> </a>
+							</li>
+
+							<li class="header__photo-item header__photo-up">
+								<a class="header__photo-link" href="#"></a>
+							</li>
+
+							<li class="header__photo-item header__photo-in">
+								<a class="header__photo-link" href="#"></a>
+							</li>
+
+							<li class="header__photo-item header__photo-indeed">
+								<a class=" header__photo-link" href="#"></a>
+							</li>
+
+						</ul>
+						<img src="./images/main.png" alt="">
+					</div>
+				</div>
+
 			</div>
-			<div class="header__content">
-				<div class="header__info">
-					<h1 class="header__info-title">
-						<span>Hello! I’m</span>
-						Alena Zhukova
-					</h1>
-					<div class="header__info-descr">
-						I’m a UI/UX designer with <span>7+ years of experience</span> <br>
-						and with diversified works in my portfolio.<br>
-						I have <span>+400 completed projects</span> and <span>+300 positive reviews.</span>
+
+			<div class="arrow-down">
+				<a href="#services"><img src="./images/arrow-down.svg" alt=""></a>
+			</div>
+		</header>
+
+		<section id="services" class="services">
+			<div class="container">
+				<div class="services__box">
+					<h2 class="services-title">
+						Services I
+						<span class="services-title__color">Offer</span>
+						<span class="blue__dot"></span>
+					</h2>
+
+
+					<div class="services__content">
+
+						<div class="services__slider">
+
+							<div class="services__slider-box">
+								<div class="services__slider-item">
+									<img src="./images/services-icon-1.svg" alt="" class="services-item__icon">
+									<h3 class="services-item__title">Responsive Web <br>
+										Design</h3>
+									<div class="services-item__descr">It is an approach that emphasises design which
+										works well across a variety of devices and browsing contexts</div>
+								</div>
+							</div>
+
+							<div class="services__slider-box">
+								<div class="services__slider-item">
+									<img src="./images/services-icon-2.svg" alt="" class="services-item__icon">
+									<h3 class="services-item__title">Mobile App <br>
+										Design</h3>
+									<div class="services-item__descr">It is the process of creating the visual
+										and interactive elements. The main goal of app design is to provide an
+										excellent user experience.
+									</div>
+								</div>
+							</div>
+
+							<div class="services__slider-box">
+								<div class="services__slider-item ">
+									<img src="./images/services-icon-3.svg" alt="" class="services-item__icon">
+									<h3 class="services-item__title">Dashboard <br>
+										Design</h3>
+									<div class="services-item__descr">It is a strategic asset for businesses. It enables
+										marketers, analysts, and decision-makers to cut through the clutter
+										of data overload and focus on the insights that matter most.
+
+									</div>
+								</div>
+							</div>
+
+							<div class="services__slider-box">
+								<div class="services__slider-item ">
+									<img src="./images/services-icon-4.svg" alt="" class="services-item__icon">
+									<h3 class="services-item__title">Brand <br>
+										Identity</h3>
+									<div class="services-item__descr">It is a set of characteristics a company develops
+										to convey the right image to consumers and differentiate itself from
+										competitors.
+									</div>
+								</div>
+							</div>
+
+
+
+						</div>
+
 					</div>
-					<div class="header__info-btns">
-						<a class="header__info-btn-tel" href="#">Let’s Talk
-							<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
-						</a>
-						<a class="header__info-btn-portf" href="#">Portfolio
-							<img src="./images/arrow.svg" alt="">
+
+				</div>
+
+
+		</section>
+
+		<section class="project">
+			<div class="container">
+				<div class="project__top">
+					<h2 class="project__title">
+						Lastest <span>Project</span>
+					</h2>
+
+					<a class="menu__link-btn" href="#">Contact Me</a>
+
+				</div>
+
+				<div id="project" class="project__wrapper">
+					<div class="project__items">
+						<div class="project__item-box">
+							<div class="project__item" data_src="./images/last_project/1.jpg">
+								<img src="./images/last_project/Rectangle.jpg" alt="project" class="project__item-img">
+							</div>
+						</div>
+						<div class="project__item-box">
+							<div class="project__item" data_src="./images/last_project/1.jpg">
+								<img src="./images/last_project/Rectangle.jpg" alt="project" class="project__item-img">
+							</div>
+						</div>
+						<div class="project__item-box">
+							<div class="project__item" data_src="./images/last_project/1.jpg">
+								<img src="./images/last_project/Rectangle.jpg" alt="project" class="project__item-img">
+							</div>
+						</div>
+						<div class="project__item-box">
+							<div class="project__item" data_src="./images/last_project/1.jpg">
+								<img src="./images/last_project/Rectangle.jpg" alt="project" class="project__item-img">
+							</div>
+						</div>
+						<div class="project__item-box">
+							<div class="project__item" data_src="./images/last_project/1.jpg">
+								<img src="./images/last_project/Rectangle.jpg" alt="project" class="project__item-img">
+							</div>
+						</div>
+						<div class="project__item-box">
+							<div class="project__item" data_src="./images/last_project/1.jpg">
+								<img src="./images/last_project/Rectangle.jpg" alt="project" class="project__item-img">
+							</div>
+						</div>
+
+					</div>
+
+					<div class="swiper-pagination"></div>
+
+				</div>
+
+
+
+		</section>
+
+
+		<section class="programsAndSkills">
+			<div class="container">
+				<div class="programsAndSkills__title">
+					<span>Skills </span> & Experience
+				</div>
+
+				<div class="programsAndSkills__wrapper">
+
+					<div class="programs__content">
+						<div class="programs__info">
+							<div class="programs__info-text">
+								<p>I am a results-oriented professional UI/UX designer who develops modern, unique
+									designs
+									for a
+									wide range of goods and services.</p>
+								<p>Over the course of my 5-year career, I've developed a skill UI design, UX user
+									research
+									and
+									interface prototyping, and user flow creation.</p>
+							</div>
+							<div class="programs__info-title">
+								Programs
+							</div>
+							<ul class="programs__info-items">
+								<li class="programs__info-item">
+									<img class="programs__info-item--img" src="./images/ps-icon.svg" alt="">
+									<h4 class="programs__info-item--title">
+										Adobe Photoshop
+									</h4>
+								</li>
+
+								<li class="programs__info-item">
+									<img class="programs__info-item--img" src="./images/ai-icon.svg" alt="">
+									<h4 class="programs__info-item--title">
+										Adobe Illustrator
+									</h4>
+								</li>
+
+								<li class="programs__info-item">
+									<img class="programs__info-item--img" src="./images/xd-icon.svg" alt="">
+									<h4 class="programs__info-item--title">
+										Adobe XD
+									</h4>
+								</li>
+
+
+								<li class="programs__info-item">
+									<img class="programs__info-item--img" src="./images/figma-icon.svg" alt="">
+									<h4 class="programs__info-item--title">
+										Figma
+									</h4>
+								</li>
+
+
+								<li class="programs__info-item">
+									<img class="programs__info-item--img" src="./images/ax-icon.svg" alt="">
+									<h4 class="programs__info-item--title">
+										Axure RP
+									</h4>
+								</li>
+
+
+								<li class="programs__info-item">
+									<img class="programs__info-item--img" src="./images/sk-icon.svg" alt="">
+									<h4 class="programs__info-item--title">
+										Sketch
+									</h4>
+								</li>
+						</div>
+					</div>
+
+
+					<div class="skills__content">
+						<div class="skills__title">
+							Skills
+						</div>
+
+						<ul class="Skills__progress">
+							<li class="Skills__progress-item">
+								<div class="Skills__progress-item--title">
+
+									<h4>Visual Design</h4>
+									<span>99%</span>
+								</div>
+								<div class="Skills__progress-item--color">
+									<span style="width: 99%;" class="proggres--bar"></span>
+								</div>
+							</li>
+							<li class="Skills__progress-item">
+								<div class="Skills__progress-item--title">
+									<h4>Wireframe</h4>
+									<span>99%</span>
+								</div>
+								<div class="Skills__progress-item--color">
+									<span style="width: 99%;" class="proggres--bar"></span>
+								</div>
+							</li>
+							<li class="Skills__progress-item">
+								<div class="Skills__progress-item--title">
+									<h4>User Experience Design</h4>
+									<span>99%</span>
+								</div>
+								<div class="Skills__progress-item--color">
+									<span style="width: 99%;" class="proggres--bar"></span>
+								</div>
+							</li>
+							<li class="Skills__progress-item">
+								<div class="Skills__progress-item--title">
+									<h4>Prototype</h4>
+									<span>99%</span>
+								</div>
+								<div class="Skills__progress-item--color">
+									<span style="width: 99%;" class="proggres--bar"></span>
+								</div>
+							</li>
+							<li class="Skills__progress-item">
+								<div class="Skills__progress-item--title">
+									<h4>Art direction</h4>
+									<span>99%</span>
+								</div>
+								<div class="Skills__progress-item--color">
+									<span style="width: 99%;" class="proggres--bar"></span>
+								</div>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+
+
+			</div>
+
+		</section>
+
+		<section class="clients">
+			<div class="container">
+				<h3 class="clients__title">
+					Client’s <span>Kind World</span>
+				</h3>
+				<div class="project__content">
+
+					<div class="project__slider">
+
+						<div class="project__slider-box">
+							<div class="project__slider-item">
+								<img src="./images/client-1.png" alt="">
+								<h6>John Doe</h6>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+									incididunt
+									ut labore et dolore magna aliqua.
+								</p>
+							</div>
+						</div>
+
+						<div class="project__slider-box">
+							<div class="project__slider-item">
+								<img src="./images/client-2.png" alt="">
+								<h6>John Doe</h6>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+									incididunt
+									ut labore et dolore magna aliqua.
+								</p>
+							</div>
+						</div>
+
+						<div class="project__slider-box">
+							<div class="project__slider-item">
+								<img src="./images/client-3.png" alt="">
+								<h6>John Doe</h6>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+									incididunt
+									ut labore et dolore magna aliqua.
+								</p>
+							</div>
+						</div>
+
+						<div class="project__slider-box">
+							<div class="project__slider-item">
+								<img src="./images/client-4.png" alt="">
+								<h6>John Doe</h6>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+									incididunt
+									ut labore et dolore magna aliqua.
+								</p>
+							</div>
+						</div>
+
+						<div class="project__slider-box">
+							<div class="project__slider-item">
+								<img src="./images/client-2.png" alt="">
+								<h6>John Doe</h6>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+									incididunt
+									ut labore et dolore magna aliqua.
+								</p>
+							</div>
+						</div>
+
+					</div>
+					<!-- If we need pagination -->
+					<div class="swiper-pagination"></div>
+					<!-- If we need navigation buttons -->
+					<div class="swiper-button-prev">
+						<img src="./images/Arrow-left.svg" alt="">
+					</div>
+					<div class="swiper-button-next">
+						<img src="./images/Arrow-right.svg" alt="">
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+
+
+		<section class="contact">
+			<div class="container">
+				<div class="contact__title">
+					Contcat <span>Me</span>
+				</div>
+
+				<form class="form" action="">
+					<div class="form__top">
+						<input type="text" placeholder="Your name ...">
+						<input type="text" placeholder="E-mail ...">
+					</div>
+					<div class="form__center">
+						<textarea name="" id="" placeholder="Your text ..."></textarea>
+					</div>
+					<button class="form__btn" type="submit">Send</button>
+				</form>
+
+			</div>
+		</section>
+
+
+
+		<footer class="footer">
+			<div class="container">
+				<div class="footer__wrapper">
+					<div class="logo-wrapper">
+						<a href="/" class="logo">
+							<img src="./images/logo.svg" alt="logo">
+							<div>UI/UX designer</div>
 						</a>
 					</div>
+
 					<ul class="header__info-soc">
 						<li>
 							<a class="header__icon-fb" href="#">
@@ -79,438 +518,58 @@
 							<a class="header__icon-ma" href="#">@</a>
 						</li>
 					</ul>
-				</div>
-				<div class="header__photo">
-					<div class="header__photo-links">
-						<a class="header__photo-be" href="#">
-						</a>
-						<a class="header__photo-fh" href="#">
-						</a>
-						<a class="header__photo-in" href="#">
-						</a>
-						<a class="header__photo-indeed" href="#">
-						</a>
+
+					<div class="corp">
+						2022 © All rights reserved
 					</div>
-					<img src="./images/main.png" alt="">
+
 				</div>
 			</div>
+		</footer>
+
+
+
+		<div class="modal-contact">
+			<section class=" modal-contact__box ">
+				<div class="container">
+					<div class="contact__title">
+						Contcat <span>Me</span>
+					</div>
+
+					<form class="form" action="">
+						<div class="form__top">
+							<input type="text" placeholder="Your name ...">
+							<input type="text" placeholder="E-mail ...">
+						</div>
+						<div class="form__center">
+							<textarea name="" id="" placeholder="Your text ..."></textarea>
+						</div>
+						<button class="form__btn" type="submit">Send</button>
+					</form>
+
+				</div>
+				<div class="modal-contact__close">X</div>
+
+
+			</section>
 
 		</div>
 
-		<div class="arrow-down">
-			<a href="#"><img src="./images/arrow-down.svg" alt=""></a>
-		</div>
-	</header>
-
-	<section class="services">
-		<div class="container">
-			<div class="services__box">
-				<h2 class="services-title">
-					Services I
-					<span class="services-title__color">Offer</span>
-					<span class="blue__dot"></span>
-				</h2>
-
-
-				<div class="services__content">
-
-					<div class="services__slider">
-
-						<div class="services__slider-box">
-							<div class="services__slider-item">
-								<img src="./images/services-icon-1.svg" alt="" class="services-item__icon">
-								<h3 class="services-item__title">Responsive Web <br>
-									Design</h3>
-								<div class="services-item__descr">Providing the correct display on various devices
-									and dynamically adjusting to the specified sizes</div>
-							</div>
-						</div>
-
-						<div class="services__slider-box">
-							<div class="services__slider-item">
-								<img src="./images/services-icon-2.svg" alt="" class="services-item__icon">
-								<h3 class="services-item__title">Mobile App <br>
-									Design</h3>
-								<div class="services-item__descr">Creating a convenient ecosystem for your project with
-									a
-									perfect UX for mobile devices
-								</div>
-							</div>
-						</div>
-
-						<div class="services__slider-box">
-							<div class="services__slider-item ">
-								<img src="./images/services-icon-3.svg" alt="" class="services-item__icon">
-								<h3 class="services-item__title">Dashboard <br>
-									Design</h3>
-								<div class="services-item__descr">An aesthetically pleasing and analytically friendly
-									dashboard for your business
-								</div>
-							</div>
-						</div>
-
-						<div class="services__slider-box">
-							<div class="services__slider-item ">
-								<img src="./images/services-icon-4.svg" alt="" class="services-item__icon">
-								<h3 class="services-item__title">Brand <br>
-									Identity</h3>
-								<div class="services-item__descr">Unique design makes you stand out from all
-									competitors,
-									even if they sell the same products or services</div>
-							</div>
-						</div>
+	</div>
 
 
 
-					</div>
+	<!-- MODAL WINDOW -->
+	<div class="modal-image">
+		<img class="modal-content" src="" alt="my project">
+		<a href="#project"><span class="close">&times;</span></a>
 
-				</div>
-
-			</div>
-
-
-	</section>
-
-	<section class="project">
-		<div class="container">
-			<h2 class="project__title">
-				Lastest <span>Project</span>
-			</h2>
-
-
-			<div class="project__items">
-				<div class="project__item">
-					<img src="./images/last_project/project-1.jpg" alt="project" class="project__item-img">
-					<p class="project__item-text">Work's name in some more word. Lorem ipsum dolor sit amet.</p>
-					<a href="" class="project__item-link">Learn more
-						<span><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
-								fill="none">
-								<path
-									d="M9.92235 3.0364C9.83216 3.19673 9.77204 3.38714 9.65178 3.51741C6.9561 6.22311 4.2504 8.92881 1.5447 11.6345C1.26411 11.9151 0.923394 12.1155 0.562634 11.9251C0.312106 11.7948 0.0214939 11.4842 0.00145169 11.2437C-0.0185905 10.9431 0.171811 10.5623 0.392275 10.3418C1.76517 8.91879 3.16812 7.53588 4.56106 6.14294C5.88384 4.82015 7.20663 3.49737 8.52942 2.17458C8.61961 2.08439 8.69978 1.98418 8.85009 1.8038C8.58955 1.79378 8.41919 1.77374 8.24883 1.77374C6.29471 1.77374 4.34059 1.77374 2.38648 1.77374C2.17603 1.77374 1.95557 1.75369 1.74513 1.69357C1.33426 1.57331 1.15388 1.26266 1.17392 0.851795C1.19396 0.470992 1.37434 0.170359 1.77519 0.09019C2.04576 0.0400844 2.30631 0 2.57688 0C5.19239 0 7.81792 0 10.4434 0C10.6739 0 10.9144 0.0100211 11.1449 0.0501056C11.656 0.140296 11.8965 0.420887 11.9065 0.941984C11.9166 3.91825 11.9166 6.8845 11.9065 9.86077C11.9065 10.3819 11.5658 10.7426 11.0948 10.7727C10.6639 10.7927 10.2931 10.4821 10.2029 9.99105C10.1729 9.83071 10.1729 9.66035 10.1729 9.48999C10.1729 7.56594 10.1729 5.65191 10.1729 3.72785C10.1729 3.54747 10.1729 3.36709 10.1729 3.18671C10.0727 3.13661 10.0025 3.0865 9.92235 3.0364Z"
-									fill="#46D3C5" />
-							</svg>
-						</span>
-					</a>
-				</div>
-				<div class="project__item">
-					<img src="./images/last_project/project-2.jpg" alt="project" class="project__item-img">
-					<p class="project__item-text">Work’s name in some more word. Lorem ipsum dolor sit amet.</p>
-					<a href="" class="project__item-link">Learn more
-						<span><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
-								fill="none">
-								<path
-									d="M9.92235 3.0364C9.83216 3.19673 9.77204 3.38714 9.65178 3.51741C6.9561 6.22311 4.2504 8.92881 1.5447 11.6345C1.26411 11.9151 0.923394 12.1155 0.562634 11.9251C0.312106 11.7948 0.0214939 11.4842 0.00145169 11.2437C-0.0185905 10.9431 0.171811 10.5623 0.392275 10.3418C1.76517 8.91879 3.16812 7.53588 4.56106 6.14294C5.88384 4.82015 7.20663 3.49737 8.52942 2.17458C8.61961 2.08439 8.69978 1.98418 8.85009 1.8038C8.58955 1.79378 8.41919 1.77374 8.24883 1.77374C6.29471 1.77374 4.34059 1.77374 2.38648 1.77374C2.17603 1.77374 1.95557 1.75369 1.74513 1.69357C1.33426 1.57331 1.15388 1.26266 1.17392 0.851795C1.19396 0.470992 1.37434 0.170359 1.77519 0.09019C2.04576 0.0400844 2.30631 0 2.57688 0C5.19239 0 7.81792 0 10.4434 0C10.6739 0 10.9144 0.0100211 11.1449 0.0501056C11.656 0.140296 11.8965 0.420887 11.9065 0.941984C11.9166 3.91825 11.9166 6.8845 11.9065 9.86077C11.9065 10.3819 11.5658 10.7426 11.0948 10.7727C10.6639 10.7927 10.2931 10.4821 10.2029 9.99105C10.1729 9.83071 10.1729 9.66035 10.1729 9.48999C10.1729 7.56594 10.1729 5.65191 10.1729 3.72785C10.1729 3.54747 10.1729 3.36709 10.1729 3.18671C10.0727 3.13661 10.0025 3.0865 9.92235 3.0364Z"
-									fill="#46D3C5" />
-							</svg>
-						</span>
-					</a>
-				</div>
-				<div class="project__item">
-					<img src="./images/last_project/project-3.jpg" alt="project" class="project__item-img">
-					<p class="project__item-text">Work’s name in some more word. Lorem ipsum dolor sit amet.</p>
-					<a href="" class="project__item-link">Learn more
-						<span><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
-								fill="none">
-								<path
-									d="M9.92235 3.0364C9.83216 3.19673 9.77204 3.38714 9.65178 3.51741C6.9561 6.22311 4.2504 8.92881 1.5447 11.6345C1.26411 11.9151 0.923394 12.1155 0.562634 11.9251C0.312106 11.7948 0.0214939 11.4842 0.00145169 11.2437C-0.0185905 10.9431 0.171811 10.5623 0.392275 10.3418C1.76517 8.91879 3.16812 7.53588 4.56106 6.14294C5.88384 4.82015 7.20663 3.49737 8.52942 2.17458C8.61961 2.08439 8.69978 1.98418 8.85009 1.8038C8.58955 1.79378 8.41919 1.77374 8.24883 1.77374C6.29471 1.77374 4.34059 1.77374 2.38648 1.77374C2.17603 1.77374 1.95557 1.75369 1.74513 1.69357C1.33426 1.57331 1.15388 1.26266 1.17392 0.851795C1.19396 0.470992 1.37434 0.170359 1.77519 0.09019C2.04576 0.0400844 2.30631 0 2.57688 0C5.19239 0 7.81792 0 10.4434 0C10.6739 0 10.9144 0.0100211 11.1449 0.0501056C11.656 0.140296 11.8965 0.420887 11.9065 0.941984C11.9166 3.91825 11.9166 6.8845 11.9065 9.86077C11.9065 10.3819 11.5658 10.7426 11.0948 10.7727C10.6639 10.7927 10.2931 10.4821 10.2029 9.99105C10.1729 9.83071 10.1729 9.66035 10.1729 9.48999C10.1729 7.56594 10.1729 5.65191 10.1729 3.72785C10.1729 3.54747 10.1729 3.36709 10.1729 3.18671C10.0727 3.13661 10.0025 3.0865 9.92235 3.0364Z"
-									fill="#46D3C5" />
-							</svg>
-						</span>
-					</a>
-				</div>
-				<div class="project__item">
-					<img src="./images/last_project/project-5.jpg" alt="project" class="project__item-img">
-					<p class="project__item-text">Work’s name in some more word. Lorem ipsum dolor sit amet.</p>
-					<a href="" class="project__item-link">Learn more
-						<span><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12"
-								fill="none">
-								<path
-									d="M9.92235 3.0364C9.83216 3.19673 9.77204 3.38714 9.65178 3.51741C6.9561 6.22311 4.2504 8.92881 1.5447 11.6345C1.26411 11.9151 0.923394 12.1155 0.562634 11.9251C0.312106 11.7948 0.0214939 11.4842 0.00145169 11.2437C-0.0185905 10.9431 0.171811 10.5623 0.392275 10.3418C1.76517 8.91879 3.16812 7.53588 4.56106 6.14294C5.88384 4.82015 7.20663 3.49737 8.52942 2.17458C8.61961 2.08439 8.69978 1.98418 8.85009 1.8038C8.58955 1.79378 8.41919 1.77374 8.24883 1.77374C6.29471 1.77374 4.34059 1.77374 2.38648 1.77374C2.17603 1.77374 1.95557 1.75369 1.74513 1.69357C1.33426 1.57331 1.15388 1.26266 1.17392 0.851795C1.19396 0.470992 1.37434 0.170359 1.77519 0.09019C2.04576 0.0400844 2.30631 0 2.57688 0C5.19239 0 7.81792 0 10.4434 0C10.6739 0 10.9144 0.0100211 11.1449 0.0501056C11.656 0.140296 11.8965 0.420887 11.9065 0.941984C11.9166 3.91825 11.9166 6.8845 11.9065 9.86077C11.9065 10.3819 11.5658 10.7426 11.0948 10.7727C10.6639 10.7927 10.2931 10.4821 10.2029 9.99105C10.1729 9.83071 10.1729 9.66035 10.1729 9.48999C10.1729 7.56594 10.1729 5.65191 10.1729 3.72785C10.1729 3.54747 10.1729 3.36709 10.1729 3.18671C10.0727 3.13661 10.0025 3.0865 9.92235 3.0364Z"
-									fill="#46D3C5" />
-							</svg>
-						</span>
-					</a>
-				</div>
-			</div>
-
-
-
-
-		</div>
-	</section>
-
-
-	<section class="programsAndSkills">
-		<div class="container">
-			<div class="programsAndSkills__title">
-				<span>Programs</span> & Skills
-			</div>
-
-			<div class="programsAndSkills__wrapper">
-
-				<div class="programs__content">
-					<div class="programs__info">
-						<div class="programs__info-text">
-							<p>I am a results-oriented professional UI/UX designer who develops modern, unique designs
-								for a
-								wide range of goods and services.</p>
-							<p>Over the course of my 5-year career, I've developed a skill UI design, UX user research
-								and
-								interface prototyping, and user flow creation.</p>
-						</div>
-						<div class="programs__info-title">
-							Programs
-						</div>
-						<ul class="programs__info-items">
-							<li class="programs__info-item">
-								<img class="programs__info-item--img" src="./images/ps-icon.svg" alt="">
-								<h4 class="programs__info-item--title">
-									Adobe Photoshop
-								</h4>
-							</li>
-
-							<li class="programs__info-item">
-								<img class="programs__info-item--img" src="./images/ai-icon.svg" alt="">
-								<h4 class="programs__info-item--title">
-									Adobe Illustrator
-								</h4>
-							</li>
-
-							<li class="programs__info-item">
-								<img class="programs__info-item--img" src="./images/xd-icon.svg" alt="">
-								<h4 class="programs__info-item--title">
-									Adobe XD
-								</h4>
-							</li>
-
-
-							<li class="programs__info-item">
-								<img class="programs__info-item--img" src="./images/figma-icon.svg" alt="">
-								<h4 class="programs__info-item--title">
-									Figma
-								</h4>
-							</li>
-
-
-							<li class="programs__info-item">
-								<img class="programs__info-item--img" src="./images/ax-icon.svg" alt="">
-								<h4 class="programs__info-item--title">
-									Axure RP
-								</h4>
-							</li>
-
-
-							<li class="programs__info-item">
-								<img class="programs__info-item--img" src="./images/sk-icon.svg" alt="">
-								<h4 class="programs__info-item--title">
-									Sketch
-								</h4>
-							</li>
-					</div>
-				</div>
-
-
-				<div class="skills__content">
-					<div class="skills__title">
-						Skills
-					</div>
-
-					<ul class="Skills__progress">
-						<li class="Skills__progress-item">
-							<div class="Skills__progress-item--title">
-
-								<h4>Visual Design</h4>
-								<span>99%</span>
-							</div>
-							<div class="Skills__progress-item--color">
-								<span style="width: 99%;" class="proggres--bar"></span>
-							</div>
-						</li>
-						<li class="Skills__progress-item">
-							<div class="Skills__progress-item--title">
-								<h4>Wireframe</h4>
-								<span>99%</span>
-							</div>
-							<div class="Skills__progress-item--color">
-								<span style="width: 99%;" class="proggres--bar"></span>
-							</div>
-						</li>
-						<li class="Skills__progress-item">
-							<div class="Skills__progress-item--title">
-								<h4>User Experience Design</h4>
-								<span>99%</span>
-							</div>
-							<div class="Skills__progress-item--color">
-								<span style="width: 99%;" class="proggres--bar"></span>
-							</div>
-						</li>
-						<li class="Skills__progress-item">
-							<div class="Skills__progress-item--title">
-								<h4>Prototype</h4>
-								<span>99%</span>
-							</div>
-							<div class="Skills__progress-item--color">
-								<span style="width: 99%;" class="proggres--bar"></span>
-							</div>
-						</li>
-						<li class="Skills__progress-item">
-							<div class="Skills__progress-item--title">
-								<h4>Art direction</h4>
-								<span>99%</span>
-							</div>
-							<div class="Skills__progress-item--color">
-								<span style="width: 99%;" class="proggres--bar"></span>
-							</div>
-						</li>
-					</ul>
-				</div>
-
-			</div>
-
-
-		</div>
-
-	</section>
-
-	<section class="clients">
-		<div class="container">
-			<h3 class="clients__title">
-				Client’s <span>Kind World</span>
-			</h3>
-			<div class="project__content">
-
-				<div class="project__slider">
-
-					<div class="project__slider-box">
-						<div class="project__slider-item">
-							<img src="./images/client-1.png" alt="">
-							<h6>John Doe</h6>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-								ut labore et dolore magna aliqua.
-							</p>
-						</div>
-					</div>
-
-					<div class="project__slider-box">
-						<div class="project__slider-item">
-							<img src="./images/client-2.png" alt="">
-							<h6>John Doe</h6>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-								ut labore et dolore magna aliqua.
-							</p>
-						</div>
-					</div>
-
-					<div class="project__slider-box">
-						<div class="project__slider-item">
-							<img src="./images/client-3.png" alt="">
-							<h6>John Doe</h6>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-								ut labore et dolore magna aliqua.
-							</p>
-						</div>
-					</div>
-
-					<div class="project__slider-box">
-						<div class="project__slider-item">
-							<img src="./images/client-4.png" alt="">
-							<h6>John Doe</h6>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-								ut labore et dolore magna aliqua.
-							</p>
-						</div>
-					</div>
-
-					<div class="project__slider-box">
-						<div class="project__slider-item">
-							<img src="./images/client-2.png" alt="">
-							<h6>John Doe</h6>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-								ut labore et dolore magna aliqua.
-							</p>
-						</div>
-					</div>
-
-				</div>
-				<!-- If we need pagination -->
-				<div class="swiper-pagination"></div>
-				<!-- If we need navigation buttons -->
-				<div class="swiper-button-prev">
-					<img src="./images/Arrow-left.svg" alt="">
-				</div>
-				<div class="swiper-button-next">
-					<img src="./images/Arrow-right.svg" alt="">
-				</div>
-
-			</div>
-		</div>
-	</section>
-
-
-
-	<section class="contact">
-		<div class="container">
-			<div class="contact__title">
-				Contcat <span>Me</span>
-			</div>
-
-			<form class="form" action="">
-				<div class="form__top">
-					<input type="text" placeholder="Your name ...">
-					<input type="text" placeholder="E-mail ...">
-				</div>
-				<div class="form__center">
-					<textarea name="" id="" placeholder="Your text ..."></textarea>
-				</div>
-				<button class="form__btn" type="submit">Send</button>
-			</form>
-
-		</div>
-	</section>
-
-
-
-
-	<footer class="footer">
-		<div class="container">
-			<div class="footer__wrapper">
-				<div class="logo-wrapper">
-					<a href="/" class="logo">
-						<img src="./images/logo.svg" alt="logo">
-						<div>UI/UX designer</div>
-					</a>
-				</div>
-
-				<ul class="header__info-soc">
-					<li>
-						<a class="header__icon-fb" href="#">
-							<i class="fa fa-facebook" aria-hidden="true"></i>
-						</a>
-					</li>
-					<li>
-						<a class="header__icon-in" href="#">
-							<i class="fa fa-instagram" aria-hidden="true"></i>
-						</a>
-					</li>
-					<li>
-						<a class="header__icon-wh" href="#">
-							<i class="fa fa-whatsapp" aria-hidden="true"></i>
-						</a>
-					</li>
-					<li>
-						<a class="header__icon-ma" href="#">@</a>
-					</li>
-				</ul>
-
-				<div class="corp">
-					2022 © All rights reserved
-				</div>
-
-			</div>
-		</div>
-	</footer>
+	</div>
 
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 
