@@ -53,11 +53,6 @@ body {
   display: none;
 }
 
-.not-scroll {
-  position: fixed;
-  width: 100%;
-}
-
 .container {
   max-width: 1300px;
   margin: 0 auto;
@@ -162,7 +157,7 @@ body {
     rgba(255, 255, 255, 0.1),
     rgba(255, 255, 255, 0.4)
   );
-  animation: flareAnimation 3s infinite linear; // Время и тип анимации можно менять
+  animation: flareAnimation 3s infinite linear;
 }
 
 @keyframes flareAnimation {
@@ -358,10 +353,21 @@ body {
   height: 100%;
   width: 100%;
 }
+.header__photo-dribble {
+  bottom: 369px;
+  left: -76px;
+}
 .header__photo-be {
-  bottom: 220px;
+  bottom: 205px;
   left: -100px;
 }
+.header__photo-dribble a {
+  background: url("../images/icon-dr.svg") no-repeat center;
+}
+.header__photo-dribble a:hover {
+  background: url("../images/icon-dr-hover.svg") no-repeat center;
+}
+
 .header__photo-be a {
   background: url("../images/be-i.svg") no-repeat center;
 }
@@ -540,7 +546,6 @@ project
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid transparent;
   background: linear-gradient(to right, #fff, #fff),
     linear-gradient(
       160deg,
@@ -551,13 +556,19 @@ project
   background-clip: padding-box, border-box;
   background-origin: padding-box, border-box;
 }
-
+.project__link-btn svg {
+  margin-left: 10px;
+}
 .project__top > .menu__link-btn:hover {
   background: linear-gradient(to right, #40f0b2, #2ec4e5);
   color: #fff;
-  border: none;
-  padding: 17px 33px;
+  padding: 18px 34px;
 }
+
+.project__top > .menu__link-btn:hover path {
+  fill: #fff;
+}
+
 .project__top > .menu__link-btn:active {
   background: #31c5e5;
 }
@@ -629,9 +640,19 @@ programsAndSkills
 ==========*/
 
 .programsAndSkills {
+  position: relative;
   margin-top: 120px;
 }
 
+.programsAndSkills::before {
+  position: absolute;
+  content: "";
+  top: -50%;
+  width: 100%;
+  height: 850px;
+  background-image: url("../images/background-clients.png");
+  z-index: -1;
+}
 .programsAndSkills__title span {
   color: #31c5e5;
 }
@@ -646,28 +667,36 @@ programsAndSkills
   width: 60%;
 }
 
-.skills__content {
-  width: 40%;
-}
-
 .programs__info-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
 }
 
+.programs__info-text li {
+  list-style-type: disc;
+  margin-bottom: 25px;
+}
+
 .programs__info-title {
-  margin-top: 30px;
   font-weight: 500;
   font-size: 28px;
   line-height: 32px;
+  margin-bottom: 40px;
 }
 
 .programs__info-items {
   display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 50px;
+  margin-right: 50px;
+  margin-left: -20px;
+}
+.programs__info-item {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .programs__info-item--img {
@@ -680,11 +709,6 @@ programsAndSkills
   transform: rotate(360deg);
 }
 
-.programs__info-item {
-  margin-top: 30px;
-  width: 31%;
-}
-
 .programs__info-item--title {
   margin-top: 15px;
   font-weight: 400;
@@ -692,64 +716,106 @@ programsAndSkills
   line-height: 23px;
 }
 
-.skills__content {
-  margin-left: 210px;
+.myJourney__content {
+  width: 50%;
+  margin-left: 50px;
 }
 
-.skills__title {
+.myJourney__title {
   font-weight: 500;
   font-size: 28px;
   line-height: 32px;
 }
 
-.Skills__progress-item--title {
-  margin-top: 40px;
+.myJourney__items {
+  padding-right: 25px;
+  margin-top: 35px;
+  max-height: 400px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.myJourney__items::-webkit-scrollbar {
+  width: 0;
+}
+
+.myJourney__item {
+  padding-left: 45px;
+  position: relative;
   display: flex;
   justify-content: space-between;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 23px;
-}
-
-.Skills__progress-item--title h4 {
-  font-weight: 400;
-}
-
-.Skills__progress-item--color {
-  margin-top: 12px;
-  background: #f3f2f2;
-  border-radius: 12px;
-  justify-content: flex-start;
   align-items: center;
-  position: relative;
-  padding: 0 5px;
-  display: flex;
-  height: 8px;
-  width: 500px;
+  color: #333333;
+  font-size: 20px;
+  margin-bottom: 47px;
 }
 
-.proggres--bar {
-  animation: 3s normal forwards;
-  box-shadow: 0 10px 40px -10px #fff;
-  border-radius: 100px;
-  background: linear-gradient(
-    123.96deg,
-    #40f0b2 20.12%,
-    #74f5de 50.65%,
-    #46d5e3 70.6%,
-    #2ec4e5 81.02%
-  );
-  border-radius: 12px;
-  height: 6px;
+.myJourney__item::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0px;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  border: 2px solid #fff;
+  background-color: #31c5e5;
+  box-shadow: 10px 10px 15px rgba(0, 68, 97, 0.08);
 }
+.myJourney__item::after {
+  content: "";
+  position: absolute;
+  bottom: -68%;
+  left: 10px;
+  width: 1px;
+  height: 60px;
+  background-color: #dedbdb;
+  box-shadow: 10px 10px 15px rgba(0, 68, 97, 0.08);
+}
+
+.myJourney__item:last-child::after {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+}
+
+.myJourney__company {
+  display: flex;
+  align-items: center;
+}
+.myJourney__company-info {
+  margin-left: 23px;
+}
+.myJourney__company-pos {
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+.myJourney__company-image {
+  width: 46px;
+}
+
+.myJourney__date {
+  text-align: right;
+}
+.myJourney__date-month {
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+/* ========================
+ clients 
+======================== */
 
 .clients {
   margin-top: 120px;
+  position: relative;
 }
 
 .clients__title {
   font-weight: 700;
-  font-size: 54px;
+  font-size: 42px;
   line-height: 62px;
   text-align: center;
 }
@@ -761,7 +827,7 @@ programsAndSkills
 .project__content {
   overflow: hidden;
   width: 100%;
-  margin-top: 50px;
+  margin-top: 40px;
   margin-bottom: 100px;
 }
 
@@ -796,31 +862,53 @@ programsAndSkills
 .project__slider-box {
   flex-shrink: 0;
   display: flex;
-  align-items: center;
   text-align: center;
+  padding: 15px;
+}
+.project__slider-item {
+  padding: 30px 15px;
+  border-radius: 16px;
+  box-shadow: 0px 5px 10px 4px rgba(0, 68, 97, 0.05) inset;
+  position: relative;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
-.project__slider-box img {
-  width: 72px;
-  height: 72px;
-  border-radius: 100%;
+.project__slider-item::before {
+  content: "";
+  position: absolute;
+  top: -17px;
+  left: 13px;
+  width: 44px;
+  height: 29px;
+  background: url("../images/qoutes.png") no-repeat;
+  background-size: cover;
 }
 
-.project__slider-box h6 {
-  margin-top: 15px;
+.project__slider-item h6 {
   font-weight: 500;
   font-size: 20px;
   line-height: 23px;
 }
+.project__slider-item span {
+  display: inline-block;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
 
-.project__slider-box p {
+.project__slider-item p {
   width: 260px;
-  margin-top: 15px;
+  margin-bottom: 15px;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
 }
-
+.project__slider-item--stars img {
+  width: 16px;
+  height: 16px;
+}
 .swiper-button-next:after,
 .swiper-button-prev:after {
   font-size: 0;
@@ -851,7 +939,7 @@ contact
 .contact__title {
   text-align: center;
   font-weight: 700;
-  font-size: 54px;
+  font-size: 42px;
   line-height: 62px;
 }
 
@@ -875,7 +963,7 @@ contact
   padding: 14.5px 20px;
   gap: 10px;
   width: 300px;
-  height: 50px;
+  height: 60px;
   background: #ffffff;
   border-radius: 37px;
 }
@@ -902,7 +990,9 @@ button:focus-visible {
 }
 
 .form__btn {
-  display: block;
+  display: flex;
+  align-items: center;
+
   margin: 40px auto 0;
   padding: 16px 32px;
   text-align: center;
@@ -912,6 +1002,25 @@ button:focus-visible {
   color: #fff;
   cursor: pointer;
 }
+.form__btn img {
+  margin-left: 10px;
+}
+
+.form__btn:hover {
+  background: #31c5e5;
+}
+.form__btn:active {
+  background: #159bb8;
+}
+input:hover,
+textarea:hover {
+  outline: 1px solid #31c5e5;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid #74f5de;
+}
 
 /*===========
 
@@ -920,8 +1029,9 @@ footer
 ==========*/
 
 .footer {
+  border-top: 1px solid #fff;
   padding: 25px 0;
-  background: linear-gradient(180deg, #ebebeb 0%, #f2f2f2 100%);
+  background: linear-gradient(180deg, #f0f7f9 0%, #edfbff 100%);
 }
 
 .footer__wrapper {
@@ -938,8 +1048,8 @@ footer
 
 /* modal */
 .modal-image {
+  padding-top: 25px;
   display: none;
-  position: absolute;
   width: 100%;
   min-height: 100%;
   height: fit-content;
@@ -947,6 +1057,7 @@ footer
   text-align: center;
   justify-content: center;
   z-index: 999999;
+  /*   overflow: scroll; */
 }
 
 .modal-image > img {
@@ -968,6 +1079,16 @@ footer
   right: 25px;
 }
 
+.mfp-close-btn-in .mfp-close {
+  color: #fff;
+  position: fixed;
+  top: 25px;
+  right: 55px;
+  font-size: 40px;
+}
+.mfp-container {
+  padding: 0;
+}
 /* modal-contact */
 
 .modal-contact {
@@ -982,9 +1103,9 @@ footer
 }
 .modal-contact__box {
   position: relative;
-  padding: 80px 50px;
+  padding: 80px 40px;
   background-image: none;
-  background: #efeded;
+  background: #e9f4f6;
   border-radius: 50px;
   max-width: 50%;
   margin: 50px auto;
@@ -995,11 +1116,88 @@ footer
   position: absolute;
   top: 35px;
   right: 35px;
+  color: rgba(0, 0, 0, 0.205);
 }
 
 .show-modal {
   display: block;
 }
+
+/* PAGE PORTFOLIO */
+/* PAGE PORTFOLIO */
+/* PAGE PORTFOLIO */
+/* PAGE PORTFOLIO */
+/* PAGE PORTFOLIO */
+
+.allProjects {
+  margin-top: 55px;
+}
+.allProjects__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.allProjects__back {
+  font-size: 20px;
+  color: #333333;
+}
+.allProjects__back img {
+  padding-left: 10px;
+}
+.projectContent__filters {
+  margin-top: 55px;
+
+  display: flex;
+}
+.projectContent__filter {
+  cursor: pointer;
+  margin-right: 50px;
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+}
+.projectContent__filter.mixitup-control-active {
+  color: #31c5e5;
+  position: relative;
+}
+.projectContent__filter.mixitup-control-active::after {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 1px;
+  bottom: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #31c5e5;
+}
+.projectContent__items {
+  margin-top: 55px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 24px;
+  padding-bottom: 100px;
+}
+.projectContent__item {
+  cursor: pointer;
+}
+.menu__link-btn.portfolio__btn {
+  background: linear-gradient(to right, #f6fdff, #f8feff),
+    linear-gradient(
+      160deg,
+      rgba(64, 240, 178, 1) 0%,
+      rgba(116, 245, 222, 1) 35%,
+      rgba(46, 196, 229, 1) 100%
+    );
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+}
+.menu__link-btn.portfolio__btn:hover {
+  background: linear-gradient(to right, #40f0b2, #2ec4e5);
+  color: #fff;
+  border: none;
+  padding: 17px 33px;
+}
+
 /* 
 Идеи для анимации
 1 - лого идет блеск +

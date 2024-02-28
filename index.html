@@ -15,6 +15,9 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+	<link rel="stylesheet" href="./libs/pop-up/magnific-popup.css">
 	<link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -59,10 +62,10 @@
 							Completed <span>over 400 projects</span> and get <span>over 300 positive reviews.</span>
 						</div>
 						<div class="header__info-btns">
-							<a class="header__info-btn-tel" href="#">Let’s Talk
+							<a class="header__info-btn-tel" target="_blank" href="https://t.me/alena_404">Let’s Talk
 								<i class="fa fa-paper-plane-o" aria-hidden="true"></i>
 							</a>
-							<a class="header__info-btn-portf" href="#">Portfolio
+							<a class="header__info-btn-portf" href="./all-projects.html">Portfolio
 								<svg width="12" height="12" viewBox="0 0 12 12" fill="none"
 									xmlns="http://www.w3.org/2000/svg">
 									<path
@@ -95,7 +98,9 @@
 					</div>
 					<div class="header__photo">
 						<ul class="header__photo-items">
-
+							<li class="header__photo-item header__photo-dribble">
+								<a class="header__photo-link" href="#"> </a>
+							</li>
 							<li class="header__photo-item header__photo-be">
 								<a class="header__photo-link" href="#"> </a>
 							</li>
@@ -123,7 +128,7 @@
 				<a href="#services"><img src="./images/arrow-down.svg" alt=""></a>
 			</div>
 		</header>
-
+		<!-- 
 		<section id="services" class="services">
 			<div class="container">
 				<div class="services__box">
@@ -194,8 +199,8 @@
 				</div>
 
 
-		</section>
-
+		</section> -->
+		<!-- 
 		<section class="project">
 			<div class="container">
 				<div class="project__top">
@@ -203,42 +208,43 @@
 						Lastest <span>Project</span>
 					</h2>
 
-					<a class="menu__link-btn" href="#">Contact Me</a>
+					<a class="menu__link-btn project__link-btn" href="./all-projects.html">Show all <svg width="12"
+							height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M9.92235 3.0364C9.83216 3.19673 9.77204 3.38714 9.65178 3.51741C6.9561 6.22311 4.2504 8.92881 1.5447 11.6345C1.26411 11.9151 0.923394 12.1155 0.562634 11.9251C0.312106 11.7948 0.0214939 11.4842 0.00145169 11.2437C-0.0185905 10.9431 0.171811 10.5623 0.392275 10.3418C1.76517 8.91879 3.16812 7.53588 4.56106 6.14294C5.88384 4.82015 7.20663 3.49737 8.52942 2.17458C8.61961 2.08439 8.69978 1.98418 8.85009 1.8038C8.58955 1.79378 8.41919 1.77374 8.24883 1.77374C6.29471 1.77374 4.34059 1.77374 2.38648 1.77374C2.17603 1.77374 1.95557 1.75369 1.74513 1.69357C1.33426 1.57331 1.15388 1.26266 1.17392 0.851795C1.19396 0.470992 1.37434 0.170359 1.77519 0.09019C2.04576 0.0400844 2.30631 0 2.57688 0C5.19239 0 7.81792 0 10.4434 0C10.6739 0 10.9144 0.0100211 11.1449 0.0501056C11.656 0.140296 11.8965 0.420887 11.9065 0.941984C11.9166 3.91825 11.9166 6.8845 11.9065 9.86077C11.9065 10.3819 11.5658 10.7426 11.0948 10.7727C10.6639 10.7927 10.2931 10.4821 10.2029 9.99105C10.1729 9.83071 10.1729 9.66035 10.1729 9.48999C10.1729 7.56594 10.1729 5.65191 10.1729 3.72785C10.1729 3.54747 10.1729 3.36709 10.1729 3.18671C10.0727 3.13661 10.0025 3.0865 9.92235 3.0364Z"
+								fill="#46D3C5" />
+						</svg></a>
 
 				</div>
 
 				<div id="project" class="project__wrapper">
 					<div class="project__items">
-						<div class="project__item-box">
-							<div class="project__item" data_src="./images/last_project/1.jpg">
-								<img src="./images/last_project/Rectangle.jpg" alt="project" class="project__item-img">
+
+
+						<a href="#form_popup" class="project__item-box image-popup">
+							<div class="project__item" data_src="./images/last_project/AngularUP.jpg">
+								<img src="./images/last_project/prev-AngularUP.jpg" alt="project"
+									class="project__item-img">
 							</div>
-						</div>
-						<div class="project__item-box">
-							<div class="project__item" data_src="./images/last_project/1.jpg">
-								<img src="./images/last_project/Rectangle.jpg" alt="project" class="project__item-img">
+						</a>
+						<a href="#form_popup" class="project__item-box image-popup">
+							<div class="project__item" data_src="./images/last_project/agroup.jpg">
+								<img src="./images/last_project/prev-agroup.jpg" alt="project"
+									class="project__item-img">
 							</div>
-						</div>
-						<div class="project__item-box">
-							<div class="project__item" data_src="./images/last_project/1.jpg">
-								<img src="./images/last_project/Rectangle.jpg" alt="project" class="project__item-img">
+						</a>
+
+						<a href="#form_popup" class="project__item-box image-popup">
+							<div class="project__item" data_src="./images/last_project/FreshFrozen.jpg">
+								<img src="./images/last_project/prev-FreshFrozen.jpg" alt="project"
+									class="project__item-img">
 							</div>
-						</div>
-						<div class="project__item-box">
-							<div class="project__item" data_src="./images/last_project/1.jpg">
-								<img src="./images/last_project/Rectangle.jpg" alt="project" class="project__item-img">
+						</a>
+						<a href="#form_popup" class="project__item-box image-popup">
+							<div class="project__item" data_src="./images/last_project/NTS.jpg">
+								<img src="./images/last_project/prev-NTS.jpg" alt="project" class="project__item-img">
 							</div>
-						</div>
-						<div class="project__item-box">
-							<div class="project__item" data_src="./images/last_project/1.jpg">
-								<img src="./images/last_project/Rectangle.jpg" alt="project" class="project__item-img">
-							</div>
-						</div>
-						<div class="project__item-box">
-							<div class="project__item" data_src="./images/last_project/1.jpg">
-								<img src="./images/last_project/Rectangle.jpg" alt="project" class="project__item-img">
-							</div>
-						</div>
+						</a>
 
 					</div>
 
@@ -248,9 +254,9 @@
 
 
 
-		</section>
+		</section> -->
 
-
+		<!-- 
 		<section class="programsAndSkills">
 			<div class="container">
 				<div class="programsAndSkills__title">
@@ -261,41 +267,24 @@
 
 					<div class="programs__content">
 						<div class="programs__info">
-							<div class="programs__info-text">
-								<p>I am a results-oriented professional UI/UX designer who develops modern, unique
-									designs
-									for a
-									wide range of goods and services.</p>
-								<p>Over the course of my 5-year career, I've developed a skill UI design, UX user
-									research
-									and
-									interface prototyping, and user flow creation.</p>
-							</div>
 							<div class="programs__info-title">
-								Programs
+								Skills & Tools
 							</div>
+							<ul class="programs__info-text">
+								<li>Excellent knowledge of information architecture and web design systems.</li>
+								<li>Developed wireframes, prototypes, and visual designs using Adobe Creative Suite,
+									Figma, Sketch, and other graphic design
+									software.</li>
+								<li>Detail-oriented with strong problem-solving and analytical skills.</li>
+							</ul>
+
 							<ul class="programs__info-items">
 								<li class="programs__info-item">
 									<img class="programs__info-item--img" src="./images/ps-icon.svg" alt="">
 									<h4 class="programs__info-item--title">
-										Adobe Photoshop
+										Adobe CS
 									</h4>
 								</li>
-
-								<li class="programs__info-item">
-									<img class="programs__info-item--img" src="./images/ai-icon.svg" alt="">
-									<h4 class="programs__info-item--title">
-										Adobe Illustrator
-									</h4>
-								</li>
-
-								<li class="programs__info-item">
-									<img class="programs__info-item--img" src="./images/xd-icon.svg" alt="">
-									<h4 class="programs__info-item--title">
-										Adobe XD
-									</h4>
-								</li>
-
 
 								<li class="programs__info-item">
 									<img class="programs__info-item--img" src="./images/figma-icon.svg" alt="">
@@ -304,6 +293,12 @@
 									</h4>
 								</li>
 
+								<li class="programs__info-item">
+									<img class="programs__info-item--img" src="./images/sk-icon.svg" alt="">
+									<h4 class="programs__info-item--title">
+										Sketch
+									</h4>
+								</li>
 
 								<li class="programs__info-item">
 									<img class="programs__info-item--img" src="./images/ax-icon.svg" alt="">
@@ -313,69 +308,82 @@
 								</li>
 
 
-								<li class="programs__info-item">
-									<img class="programs__info-item--img" src="./images/sk-icon.svg" alt="">
-									<h4 class="programs__info-item--title">
-										Sketch
-									</h4>
-								</li>
+
 						</div>
 					</div>
 
 
-					<div class="skills__content">
-						<div class="skills__title">
-							Skills
+					<div class="myJourney__content">
+						<div class="myJourney__title">
+							My Journey
+						</div>
+						<div class="myJourney__items">
+
+							<div class="myJourney__item">
+								<div class="myJourney__company">
+									<img class="myJourney__company-image" src="./images/myJourney/now.png" alt="«Kite»">
+									<div class="myJourney__company-info">
+										<h5 class="myJourney__company-pos">UI/UX designer</h5>
+										<span class="myJourney__company-name">at freelunce</span>
+									</div>
+								</div>
+
+								<div class="myJourney__date">
+									<div class="myJourney__date-month">Jan 2022 - Sep 2022</div>
+									<div class="myJourney__date-time">Full time</div>
+								</div>
+							</div>
+
+							<div class="myJourney__item">
+								<div class="myJourney__company">
+									<img class="myJourney__company-image" src="./images/myJourney/kite.svg"
+										alt="«Kite»">
+									<div class="myJourney__company-info">
+										<h5 class="myJourney__company-pos">Lead UI/UX designer</h5>
+										<span class="myJourney__company-name">at LLC «Kite»</span>
+									</div>
+								</div>
+
+								<div class="myJourney__date">
+									<div class="myJourney__date-month">Jan 2022 - Sep 2022</div>
+									<div class="myJourney__date-time">Full time</div>
+								</div>
+							</div>
+
+							<div class="myJourney__item">
+								<div class="myJourney__company">
+									<img class="myJourney__company-image" src="./images/myJourney/laborato.png"
+										alt="«Laborato»">
+									<div class="myJourney__company-info">
+										<h5 class="myJourney__company-pos">Lead UI/UX designer</h5>
+										<span class="myJourney__company-name">at LLC «Laborato»</span>
+									</div>
+								</div>
+
+								<div class="myJourney__date">
+									<div class="myJourney__date-month">Sep 2021 - Jan 2022</div>
+									<div class="myJourney__date-time">Full time</div>
+								</div>
+							</div>
+
+							<div class="myJourney__item">
+								<div class="myJourney__company">
+									<img class="myJourney__company-image" src="./images/myJourney/freelancehunt.svg"
+										alt="Freelancehunt">
+									<div class="myJourney__company-info">
+										<h5 class="myJourney__company-pos">Web Designer</h5>
+										<span class="myJourney__company-name">at Freelancehunt.com</span>
+									</div>
+								</div>
+
+								<div class="myJourney__date">
+									<div class="myJourney__date-month">Apr 2018 - Sep 2021</div>
+									<div class="myJourney__date-time">Full time</div>
+								</div>
+							</div>
+
 						</div>
 
-						<ul class="Skills__progress">
-							<li class="Skills__progress-item">
-								<div class="Skills__progress-item--title">
-
-									<h4>Visual Design</h4>
-									<span>99%</span>
-								</div>
-								<div class="Skills__progress-item--color">
-									<span style="width: 99%;" class="proggres--bar"></span>
-								</div>
-							</li>
-							<li class="Skills__progress-item">
-								<div class="Skills__progress-item--title">
-									<h4>Wireframe</h4>
-									<span>99%</span>
-								</div>
-								<div class="Skills__progress-item--color">
-									<span style="width: 99%;" class="proggres--bar"></span>
-								</div>
-							</li>
-							<li class="Skills__progress-item">
-								<div class="Skills__progress-item--title">
-									<h4>User Experience Design</h4>
-									<span>99%</span>
-								</div>
-								<div class="Skills__progress-item--color">
-									<span style="width: 99%;" class="proggres--bar"></span>
-								</div>
-							</li>
-							<li class="Skills__progress-item">
-								<div class="Skills__progress-item--title">
-									<h4>Prototype</h4>
-									<span>99%</span>
-								</div>
-								<div class="Skills__progress-item--color">
-									<span style="width: 99%;" class="proggres--bar"></span>
-								</div>
-							</li>
-							<li class="Skills__progress-item">
-								<div class="Skills__progress-item--title">
-									<h4>Art direction</h4>
-									<span>99%</span>
-								</div>
-								<div class="Skills__progress-item--color">
-									<span style="width: 99%;" class="proggres--bar"></span>
-								</div>
-							</li>
-						</ul>
 					</div>
 
 				</div>
@@ -384,7 +392,9 @@
 			</div>
 
 		</section>
+ -->
 
+		<!--  
 		<section class="clients">
 			<div class="container">
 				<h3 class="clients__title">
@@ -394,65 +404,227 @@
 
 					<div class="project__slider">
 
+
+
+
 						<div class="project__slider-box">
 							<div class="project__slider-item">
-								<img src="./images/client-1.png" alt="">
-								<h6>John Doe</h6>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-									incididunt
-									ut labore et dolore magna aliqua.
-								</p>
+								<div class="project__slider-item--info">
+									<h6>Ryan Adams</h6>
+									<span>Project</span>
+									<p>We are extremely satisfied with provided the UI/UX services. She actively
+										listened to
+										our requirements and provided
+										valuable suggestions that enhanced the overall user experience of our app.
+									</p>
+								</div>
+
+								<div class="project__slider-item--stars">
+									<span><img src="./images/start.svg" alt=""></span>
+									<span><img src="./images/start.svg" alt=""></span>
+									<span><img src="./images/start.svg" alt=""></span>
+									<span><img src="./images/start.svg" alt=""></span>
+									<span><img src="./images/start.svg" alt=""></span>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="project__slider-box">
+
+							<div class="project__slider-item">
+
+
+								<div class="project__slider-item--info">
+									<h6>Maria Ivanova</h6>
+									<span>Project</span>
+									<p class="project__slider-item--text">
+										I highly recommend working with Alena for all your UI/UX design needs. Her
+										designs
+										have greatly improved the overall
+										aesthetic and functionality of our website.
+									</p>
+								</div>
+
+
+								<div class="project__slider-item--stars">
+									<span><img src="./images/start.svg" alt=""></span>
+									<span><img src="./images/start.svg" alt=""></span>
+									<span><img src="./images/start.svg" alt=""></span>
+									<span><img src="./images/start.svg" alt=""></span>
+									<span><img src="./images/start.svg" alt=""></span>
+								</div>
 							</div>
 						</div>
 
 						<div class="project__slider-box">
+
 							<div class="project__slider-item">
-								<img src="./images/client-2.png" alt="">
-								<h6>John Doe</h6>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-									incididunt
-									ut labore et dolore magna aliqua.
-								</p>
+								<div class="project__slider-item--info">
+									<h6>Lauren Baker</h6>
+									<span>Project</span>
+									<p class="project__slider-item--text">
+										Alena's UI/UX design skills are top-notch! She created a stunning and visually
+										appealing website for my business that
+										exceeded my expectations.
+									</p>
+								</div>
+
+								<div class="project__slider-item--stars">
+									<span><img src="./images/start.svg" alt=""></span>
+									<span><img src="./images/start.svg" alt=""></span>
+									<span><img src="./images/start.svg" alt=""></span>
+									<span><img src="./images/start.svg" alt=""></span>
+									<span><img src="./images/start.svg" alt=""></span>
+								</div>
 							</div>
 						</div>
 
 						<div class="project__slider-box">
+
 							<div class="project__slider-item">
-								<img src="./images/client-3.png" alt="">
-								<h6>John Doe</h6>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-									incididunt
-									ut labore et dolore magna aliqua.
-								</p>
+								<div class="project__slider-item--info">
+									<h6>Brandon Carter</h6>
+									<span>Project</span>
+									<p class="project__slider-item--text">
+										Completely satisfied with the project. She perfectly captured the essence of my
+										business.
+									</p>
+								</div>
+
+								<div class="project__slider-item--stars">
+									<span><img src="./images/start.svg" alt=""></span>
+									<span><img src="./images/start.svg" alt=""></span>
+									<span><img src="./images/start.svg" alt=""></span>
+									<span><img src="./images/start.svg" alt=""></span>
+									<span><img src="./images/start.svg" alt=""></span>
+								</div>
 							</div>
 						</div>
 
 						<div class="project__slider-box">
+
 							<div class="project__slider-item">
-								<img src="./images/client-4.png" alt="">
-								<h6>John Doe</h6>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-									incididunt
-									ut labore et dolore magna aliqua.
-								</p>
+								<div class="project__slider-item--info">
+									<h6>Anna Kuznetsova</h6>
+									<span>Project</span>
+									<p class="project__slider-item--text">
+										The speed at which the web designer completed the project was impressive. She
+										ensured timely delivery without
+										compromising on quality.
+									</p>
+								</div>
+
+								<div class="project__slider-item--stars">
+									<span><img src="./images/start.svg" alt=""></span>
+									<span><img src="./images/start.svg" alt=""></span>
+									<span><img src="./images/start.svg" alt=""></span>
+									<span><img src="./images/start.svg" alt=""></span>
+									<span><img src="./images/start.svg" alt=""></span>
+								</div>
 							</div>
 						</div>
 
 						<div class="project__slider-box">
+
 							<div class="project__slider-item">
-								<img src="./images/client-2.png" alt="">
-								<h6>John Doe</h6>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-									incididunt
-									ut labore et dolore magna aliqua.
-								</p>
+								<div class="project__slider-item--info">
+									<h6>Viktor Gavrilov</h6>
+									<span>Project</span>
+									<p class="project__slider-item--text">
+										The designer was patient and understanding, taking the time to understand my
+										vision and incorporating it into the
+										final design flawlessly.
+									</p>
+								</div>
+
+								<div class="project__slider-item--stars">
+									<span><img src="./images/start.svg" alt=""></span>
+									<span><img src="./images/start.svg" alt=""></span>
+									<span><img src="./images/start.svg" alt=""></span>
+									<span><img src="./images/start.svg" alt=""></span>
+									<span><img src="./images/start.svg" alt=""></span>
+								</div>
 							</div>
 						</div>
+
+
+						<div class="project__slider-box">
+
+							<div class="project__slider-item">
+								<div class="project__slider-item--info">
+									<h6>Elena Vorobyeva</h6>
+									<span>Project</span>
+									<p class="project__slider-item--text">
+										Working with Alena was an absolute pleasure! Her attention to detail and
+										creativity truly made our project stand out.
+									</p>
+								</div>
+
+								<div class="project__slider-item--stars">
+									<span><img src="./images/start.svg" alt=""></span>
+									<span><img src="./images/start.svg" alt=""></span>
+									<span><img src="./images/start.svg" alt=""></span>
+									<span><img src="./images/start.svg" alt=""></span>
+									<span><img src="./images/start.svg" alt=""></span>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="project__slider-box">
+
+							<div class="project__slider-item">
+								<div class="project__slider-item--info">
+									<h6>Taylor Morgan</h6>
+									<span>Project</span>
+									<p class="project__slider-item--text">
+										From start to finish, exhibited professionalism and skill. She was able to
+										understand our brand and create designs
+										that perfectly reflected it.
+									</p>
+								</div>
+
+								<div class="project__slider-item--stars">
+									<span><img src="./images/start.svg" alt=""></span>
+									<span><img src="./images/start.svg" alt=""></span>
+									<span><img src="./images/start.svg" alt=""></span>
+									<span><img src="./images/start.svg" alt=""></span>
+									<span><img src="./images/start.svg" alt=""></span>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="project__slider-box">
+
+							<div class="project__slider-item">
+								<div class="project__slider-item--info">
+									<h6>Oleg Karpov</h6>
+									<span>Project</span>
+									<p class="project__slider-item--text">
+										I would highly recommend Alena to anyone seeking a talented and reliable
+										designer. Her keen eye for detail and
+										ability to capture the essence of our brand truly impressed me.
+									</p>
+								</div>
+
+								<div class="project__slider-item--stars">
+									<span><img src="./images/start.svg" alt=""></span>
+									<span><img src="./images/start.svg" alt=""></span>
+									<span><img src="./images/start.svg" alt=""></span>
+									<span><img src="./images/start.svg" alt=""></span>
+									<span><img src="./images/start.svg" alt=""></span>
+								</div>
+							</div>
+						</div>
+
+
 
 					</div>
-					<!-- If we need pagination -->
+
 					<div class="swiper-pagination"></div>
-					<!-- If we need navigation buttons -->
+	
 					<div class="swiper-button-prev">
 						<img src="./images/Arrow-left.svg" alt="">
 					</div>
@@ -462,10 +634,10 @@
 
 				</div>
 			</div>
-		</section>
+		</section>  -->
 
 
-
+		<!--  
 		<section class="contact">
 			<div class="container">
 				<div class="contact__title">
@@ -480,15 +652,16 @@
 					<div class="form__center">
 						<textarea name="" id="" placeholder="Your text ..."></textarea>
 					</div>
-					<button class="form__btn" type="submit">Send</button>
+					<button class="form__btn" type="submit"> <span>Send</span> <img src="./images/plain.svg" alt="">
+					</button>
 				</form>
 
 			</div>
-		</section>
+		</section> -->
 
 
 
-		<footer class="footer">
+		<!-- 		<footer class="footer">
 			<div class="container">
 				<div class="footer__wrapper">
 					<div class="logo-wrapper">
@@ -520,13 +693,13 @@
 					</ul>
 
 					<div class="corp">
-						2022 © All rights reserved
+						2024 © All rights reserved
 					</div>
 
 				</div>
 			</div>
 		</footer>
-
+ -->
 
 
 		<div class="modal-contact">
@@ -544,7 +717,8 @@
 						<div class="form__center">
 							<textarea name="" id="" placeholder="Your text ..."></textarea>
 						</div>
-						<button class="form__btn" type="submit">Send</button>
+						<button class="form__btn" type="submit"> <span>Send</span> <img src="./images/plain.svg" alt="">
+						</button>
 					</form>
 
 				</div>
@@ -560,16 +734,22 @@
 
 
 	<!-- MODAL WINDOW -->
-	<div class="modal-image">
-		<img class="modal-content" src="" alt="my project">
-		<a href="#project"><span class="close">&times;</span></a>
-
+	<div class="modal-image" id="form_popup">
+		<div class="modal-image__box">
+			<img class="modal-content" src="./images/last_project/AngularUP.jpg" alt="my project">
+			<span class="close"></span>
+		</div>
 	</div>
 
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+
+	<script src="./libs/pop-up/jquery.magnific-popup.min.js"></script>
+
+
 	<script src="js/main.js"></script>
 </body>
 

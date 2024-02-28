@@ -7,7 +7,19 @@ const swiper = new Swiper('.services__content', {
     slidesPerView: 3,
     spaceBetween: 20
 });
-
+const swiperMyLastProject = new Swiper('.project__wrapper', {
+    slideClass: 'project__item-box',
+    wrapperClass: 'project__items',
+    autoplay: {
+        delay: 4000,
+    },
+    slidesPerView: 4,
+    spaceBetween: 20,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+});
 const swiper2 = new Swiper('.project__content', {
     slideClass: 'project__slider-box',
     wrapperClass: 'project__slider',
@@ -28,19 +40,7 @@ const swiper2 = new Swiper('.project__content', {
 
 
 
-const swiperMyLastProject = new Swiper('.project__wrapper', {
-    slideClass: 'project__item-box',
-    wrapperClass: 'project__items',
-    autoplay: {
-        delay: 4000,
-    },
-    slidesPerView: 4,
-    spaceBetween: 20,
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-});
+
 
 /* Modal gallery */
 const imgProgect = document.querySelector('.project__item');
@@ -56,16 +56,14 @@ imgProgectAll.forEach((element) => element.addEventListener('click', () => {
     const imgForModal = element.getAttribute('data_src');
     imageModalElement.src = imgForModal;
     modalImageBlock.classList.add('show');
-    wrapper.classList.add('not-scroll');
+
 }));
 
+$(document).ready(function () {
+    $('.image-popup').magnificPopup();
+});
 
 
-btnCloseModal.addEventListener('click', () => {
-    modalImageBlock.classList.remove('show');
-    wrapper.classList.remove('not-scroll');
-    console.log("close");
-})
 
 
 /* Modal contact */
@@ -75,13 +73,15 @@ const btnCloseModalContact = document.querySelector('.modal-contact__close');
 
 btnOpenModalContact.addEventListener('click', () => {
     modalContact.classList.add('show-modal');
-    /* wrapper.classList.remove('not-scroll'); */
-    console.log(1);
 
 })
 
 btnCloseModalContact.addEventListener('click', () => {
     modalContact.classList.remove('show-modal');
-    /* wrapper.classList.remove('not-scroll'); */
 
 })
+
+
+
+
+var mixer = mixitup('.projectContent__items');
