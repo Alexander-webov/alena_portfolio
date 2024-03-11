@@ -56,7 +56,7 @@ body {
 .container {
   max-width: 1300px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 20px;
   position: relative;
 }
 
@@ -192,9 +192,6 @@ body {
 }
 
 .header__info-title span {
-  font-weight: 700;
-  font-size: 54px;
-  line-height: 62px;
   color: #333333;
 }
 
@@ -276,6 +273,7 @@ body {
   display: flex;
   padding: 5px 8.5px;
   gap: 24px;
+  z-index: 10;
 }
 
 .header__info-soc li a {
@@ -582,7 +580,7 @@ project
   padding-right: 20px;
 }
 .project__items {
-  padding-bottom: 50px;
+  padding-bottom: 25px;
 
   margin-top: 40px;
   display: flex;
@@ -652,6 +650,9 @@ programsAndSkills
   height: 850px;
   background-image: url("../images/background-clients.png");
   z-index: -1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 .programsAndSkills__title span {
   color: #31c5e5;
@@ -671,6 +672,7 @@ programsAndSkills
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
+  margin-left: 20px;
 }
 
 .programs__info-text li {
@@ -689,7 +691,6 @@ programsAndSkills
   display: flex;
   gap: 50px;
   margin-right: 50px;
-  margin-left: -20px;
 }
 .programs__info-item {
   margin-top: 40px;
@@ -766,7 +767,7 @@ programsAndSkills
 .myJourney__item::after {
   content: "";
   position: absolute;
-  bottom: -68%;
+  bottom: -100%;
   left: 10px;
   width: 1px;
   height: 60px;
@@ -862,6 +863,7 @@ programsAndSkills
 .project__slider-box {
   flex-shrink: 0;
   display: flex;
+  justify-content: center;
   text-align: center;
   padding: 15px;
 }
@@ -916,10 +918,12 @@ programsAndSkills
 
 .swiper-button-prev {
   top: 65%;
+  left: -15px;
 }
 
 .swiper-button-next {
   top: 65%;
+  right: -20px;
 }
 
 /*===========
@@ -1044,6 +1048,7 @@ footer
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
+  padding-left: 10px;
 }
 
 /* modal */
@@ -1053,11 +1058,15 @@ footer
   width: 100%;
   min-height: 100%;
   height: fit-content;
-  background-color: rgba(0, 0, 0, 0.6);
+
   text-align: center;
   justify-content: center;
   z-index: 999999;
   /*   overflow: scroll; */
+}
+
+.modal-image__box img {
+  max-width: 1000px;
 }
 
 .modal-image > img {
@@ -1107,8 +1116,9 @@ footer
   background-image: none;
   background: #e9f4f6;
   border-radius: 50px;
-  max-width: 50%;
+  max-width: 900px;
   margin: 50px auto;
+  z-index: 100;
 }
 .modal-contact__close {
   cursor: pointer;
@@ -1210,5 +1220,296 @@ footer
 */
 
 /* @media */
+@media (max-width: 1420px) {
+  .header__content {
+    justify-content: space-around;
+  }
+  .my-photo {
+    max-width: 400px;
+  }
+  .header__info {
+    max-width: 420px;
+  }
+  .header__photo-in {
+    right: -30px;
+  }
+
+  .header__info-title {
+    font-size: 46px;
+    max-width: 330px;
+  }
+  .header__photo-dribble {
+    bottom: 320px;
+    left: -56px;
+  }
+  a.header__photo-link {
+    background-size: 40px 40px;
+  }
+  .programs__content {
+    width: 50%;
+  }
+  .programs__info-items {
+    gap: 40px;
+  }
+  .myJourney__item {
+    font-size: 18px;
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+
+  .modal-image__box img {
+    max-width: 98%;
+  }
+}
+
+@media (max-width: 1080px) {
+  .header {
+    min-height: 100%;
+  }
+  .header__content {
+    justify-content: unset;
+    flex-direction: column;
+    margin-top: 30px;
+    padding-bottom: 30px;
+  }
+  .header__info {
+    max-width: 620px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  .arrow-down {
+    bottom: 0;
+  }
+
+  .services {
+    padding-top: 40px;
+  }
+  .services__box {
+    display: block;
+  }
+  .services-title {
+    margin-bottom: 20px;
+  }
+  .programs__content {
+    width: 40%;
+  }
+  .myJourney__content {
+    margin-left: 20px;
+    width: 55%;
+  }
+  .myJourney__company {
+    margin-right: 5px;
+  }
+  .programs__info-item--title {
+    font-size: 16px;
+  }
+  .programs__info-items {
+    gap: 25px;
+    margin-right: 0;
+  }
+  .modal-contact__box {
+    max-width: 94%;
+  }
+}
+@media (max-width: 900px) {
+  .programsAndSkills__wrapper {
+    justify-content: unset;
+    flex-direction: column;
+  }
+  .programs__content {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  .myJourney__content {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  .programsAndSkills::before {
+    top: -27%;
+    height: 128%;
+  }
+  .programs__info-items {
+    margin-bottom: 60px;
+  }
+  .programs__info-item {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 680px) {
+  .logo-image span {
+    font-size: 14px;
+  }
+  .logo-wrapper a img {
+    max-width: 150px;
+    padding-right: 10px;
+  }
+
+  .menu__link-btn {
+    padding: 12px 22px;
+  }
+  .header__info-soc {
+    display: block;
+    padding: 5px 8.5px;
+    gap: 24px;
+    position: fixed;
+    right: 0px;
+    border-radius: 25px;
+  }
+  .header__info-soc li {
+    margin: 10px 0;
+  }
+  .header__info-descr {
+    margin-right: 45px;
+  }
+  .my-photo {
+    display: none;
+  }
+  .header__photo-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+  }
+  .header__photo-item {
+    position: static;
+    width: 60px;
+    height: 60px;
+    margin: 0 10px;
+  }
+  .project__title,
+  .programsAndSkills__title,
+  .clients__title,
+  .contact__title {
+    font-size: 36px;
+  }
+  .project__title span,
+  .programsAndSkills__title span {
+    display: block;
+  }
+  .project {
+    margin-top: 60px;
+  }
+  .programs__info-text {
+    margin-right: 30px;
+  }
+  .programs__info-text li {
+    margin-bottom: 15px;
+  }
+  .myJourney__items {
+    margin-right: 30px;
+  }
+  .project__content {
+    margin-top: 0;
+  }
+  .clients {
+    margin-top: 60px;
+  }
+  .form__top {
+    flex-wrap: wrap;
+  }
+  .form__top input {
+    max-width: 620px;
+    width: 100%;
+  }
+  .contact {
+    padding: 60px 0;
+  }
+  .footer__wrapper {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .modal-contact__box {
+    padding: 20px;
+  }
+  .modal-contact__box .form,
+  .modal-contact__box .form__btn {
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding-top: 20px;
+  }
+  .logo-image + div {
+    display: none;
+  }
+  .header__photo-item {
+    position: static;
+    margin: 10px;
+  }
+  .header__info-title {
+    font-size: 36px;
+    line-height: 1.1;
+  }
+  .header__info-btn-tel {
+    width: 140px;
+    height: 40px;
+  }
+  .header__photo-items {
+    flex-wrap: wrap;
+  }
+  .header__info-btns {
+    margin-bottom: 50px;
+  }
+
+  .services-title {
+    font-size: 36px;
+    line-height: 1.1;
+    max-width: 260px;
+  }
+  .blue__dot {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  .services__content {
+    margin: 30px auto 0;
+  }
+  .services__slider-box {
+    text-align: center;
+  }
+
+  .services-item__descr {
+    max-width: 420px;
+  }
+  .myJourney__company-pos,
+  .myJourney__date-month {
+    margin-bottom: 5px;
+  }
+  .myJourney__item {
+    outline: 30px;
+  }
+  .myJourney__company-info {
+    margin-left: 15px;
+  }
+  .myJourney__item {
+    font-size: 16px;
+  }
+  .myJourney__item::after,
+  .myJourney__item::before {
+    display: none;
+  }
+  .myJourney__item {
+    padding-left: 0;
+  }
+  .myJourney__items {
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 400px) {
+  .programs__info-items {
+    gap: 5px;
+  }
+}
+
 @media (max-width: 1000px) {
 }

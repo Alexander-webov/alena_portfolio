@@ -4,8 +4,18 @@ const swiper = new Swiper('.services__content', {
     autoplay: {
         delay: 3000,
     },
-    slidesPerView: 3,
-    spaceBetween: 20
+    slidesPerView: 1,
+    spaceBetween: 20,
+    breakpoints: {
+        800: {
+            slidesPerView: 3,
+        },
+        480: {
+            slidesPerView: 2,
+        },
+    }
+
+
 });
 const swiperMyLastProject = new Swiper('.project__wrapper', {
     slideClass: 'project__item-box',
@@ -13,17 +23,42 @@ const swiperMyLastProject = new Swiper('.project__wrapper', {
     autoplay: {
         delay: 4000,
     },
-    slidesPerView: 4,
+    slidesPerView: 1,
     spaceBetween: 20,
+
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
     },
+    breakpoints: {
+        1200: {
+            slidesPerView: 4,
+        },
+        800: {
+            slidesPerView: 3,
+
+        },
+        480: {
+            slidesPerView: 2,
+            centeredSlides: true,
+            initialSlide: 0, // -с какого начать!
+            spaceBetween: 10,
+
+        },
+
+        320: {
+            slidesPerView: 2,
+            centeredSlides: true,
+            initialSlide: 0, // -с какого начать!
+            spaceBetween: 10,
+
+        },
+    }
 });
 const swiper2 = new Swiper('.project__content', {
     slideClass: 'project__slider-box',
     wrapperClass: 'project__slider',
-    slidesPerView: 4,
+    slidesPerView: 1,
     spaceBetween: 20,
     navigation: {
         nextEl: '.swiper-button-next',
@@ -34,9 +69,26 @@ const swiper2 = new Swiper('.project__content', {
         clickable: true,
     },
     autoplay: {
-        delay: 6000,
+        delay: 6000000,
     },
+    breakpoints: {
+        1320: {
+            slidesPerView: 4,
+        },
+        920: {
+            slidesPerView: 3,
+
+        },
+        620: {
+            slidesPerView: 2,
+
+
+        },
+    }
 });
+
+
+
 
 
 
