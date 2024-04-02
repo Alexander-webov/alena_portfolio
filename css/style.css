@@ -291,18 +291,16 @@ body {
 .header__info-soc li a.header__icon-fb:hover {
   background: linear-gradient(180deg, #2083ff 0%, #1563c6 100%);
 }
-
-.header__info-soc li a.header__icon-in:hover {
-  background: linear-gradient(
-    225deg,
-    #505bce 9.87%,
-    #cb2e94 36.46%,
-    #de4068 45.31%,
-    #ee4e44 60.86%,
-    #fdda7b 85.2%
-  );
+.header__info-soc li a.header__icon-in {
+  background: url("../images/i-telegram.svg");
 }
 
+.header__info-soc li a.header__icon-in:hover {
+  background: url("../images/i-telegram-hover.svg");
+}
+.header__info-soc li a.header__icon-in:active {
+  background: url("../images/i-telegram-active.svg");
+}
 .header__info-soc li a.header__icon-wh:hover {
   background: linear-gradient(180deg, #02e239 0%, #00bc2e 100%);
 }
@@ -505,6 +503,19 @@ services
   font-size: 16px;
   line-height: 18px;
   max-width: 250px;
+}
+.services__slider-item {
+  position: relative;
+}
+
+.services__slider-item::after {
+  content: "";
+  position: absolute;
+  right: -1px;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  background: #f6f6f6;
 }
 
 .services__slider-item img {
@@ -969,7 +980,7 @@ contact
   width: 300px;
   height: 60px;
   background: #ffffff;
-  border-radius: 37px;
+  border-radius: 12px;
 }
 
 input:focus-visible,
@@ -989,7 +1000,7 @@ button:focus-visible {
   border: none;
   padding: 20px;
   background: #ffffff;
-  border-radius: 37px;
+  border-radius: 12px;
   resize: none;
 }
 
@@ -1466,10 +1477,7 @@ footer
     line-height: 1.1;
     max-width: 260px;
   }
-  .blue__dot {
-    margin-top: 10px;
-    margin-left: 10px;
-  }
+
   .services__content {
     margin: 30px auto 0;
   }
